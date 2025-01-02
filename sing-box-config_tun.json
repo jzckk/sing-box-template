@@ -7,7 +7,7 @@
   "experimental": {
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
-      "external_ui": "/storage/emulated/0/sing-box/ui",
+      "external_ui": "/ui",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "🚀 节点选择",
       "secret": "ID_4codjnk1",
@@ -49,12 +49,12 @@
       {
         "clash_mode": "直连",
         "action": "route",
-        "server": "Local-DNS"
+        "server": "alidns"
       },
       {
         "clash_mode": "全局",
         "action": "route",
-        "server": "Remote-DNS"
+        "server": "google"
       },
       {
         "rule_set": "geosite-cn",
@@ -67,7 +67,7 @@
         "server": "google"
       }
     ],
-    "final": "alidns",
+    "final": "google",
     "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
