@@ -29,12 +29,12 @@
   "dns": {
     "servers": [
       {
-        "tag": "alidns",
+        "tag": "Local-DNS-alidns",
         "address": "223.5.5.5",
         "detour": "🎯 全球直连"
       },
       {
-        "tag": "google",
+        "tag": "Remote-DNS-google",
         "address": "tls://dns.google",
         "address_resolver": "alidns",
         "address_strategy": "prefer_ipv4",
