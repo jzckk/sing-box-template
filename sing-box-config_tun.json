@@ -47,6 +47,11 @@
     ],
     "rules": [
       {
+        "outbound": "any",
+        "action": "route",
+        "server": "Local-DNS-alidns"
+      },
+      {
         "clash_mode": "直连",
         "action": "route",
         "server": "Local-DNS-alidns"
