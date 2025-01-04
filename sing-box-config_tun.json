@@ -96,9 +96,9 @@
       "auto_route": true,
       "strict_route": false,
       "route_address": [
-        "0.0.0.0/8",
+        "0.0.0.0/1",
         "128.0.0.0/1",
-        "::/8",
+        "::/1",
         "8000::/1"
       ],
       "endpoint_independent_nat": false,
