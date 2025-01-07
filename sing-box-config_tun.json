@@ -37,7 +37,7 @@
         "tag": "Remote-DNS-google",
         "address": "tls://dns.google",
         "address_resolver": "Local-DNS-alidns",
-        "address_strategy": "prefer_ipv4",
+        "address_strategy": "ipv4_only",
         "detour": "🚀 节点选择"
       },
       {
@@ -73,7 +73,7 @@
       }
     ],
     "final": "Remote-DNS-google",
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
