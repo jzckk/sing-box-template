@@ -113,7 +113,7 @@
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 2080,
+      "listen_port": 20122,
       "tcp_fast_open": false,
       "tcp_multi_path": false,
       "udp_fragment": false,
@@ -406,10 +406,6 @@
         "clash_mode": "全局",
         "action": "route",
         "outbound": "GLOBAL"
-      },
-      {
-        "protocol": "quic",
-        "action": "reject"
       },
       {
         "rule_set": "geosite-category-ads-all",
