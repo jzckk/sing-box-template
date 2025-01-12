@@ -71,7 +71,7 @@
       }
     ],
     "final": "Remote-DNS-google",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
@@ -100,14 +100,17 @@
         "8000::/1"
       ],
       "endpoint_independent_nat": false,
-      "stack": "mixed",
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 2080
-        }
-      }
+      "stack": "mixed"
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": false,
+      "users": []
     }
   ],
   "outbounds": [
