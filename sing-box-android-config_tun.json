@@ -387,10 +387,7 @@
     "final": "🐟 漏网之鱼",
     "rules": [
       {
-        "inbound": [
-          "tun-in",
-          "mixed-in"
-        ],
+        "inbound": "tun-in",
         "action": "sniff"
       },
       {
