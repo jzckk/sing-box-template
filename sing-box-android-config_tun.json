@@ -72,7 +72,7 @@
     ],
     "final": "Remote-DNS-google",
     "strategy": "prefer_ipv4",
-    "disable_cache": true,
+    "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
     "fakeip": {
