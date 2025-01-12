@@ -408,6 +408,10 @@
         "outbound": "GLOBAL"
       },
       {
+        "protocol": "quic",
+        "action": "reject"
+      },
+      {
         "rule_set": "geosite-category-ads-all",
         "action": "reject"
       },
