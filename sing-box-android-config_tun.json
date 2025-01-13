@@ -71,7 +71,7 @@
       }
     ],
     "final": "Remote-DNS-google",
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
@@ -100,7 +100,14 @@
         "8000::/1"
       ],
       "endpoint_independent_nat": false,
-      "stack": "mixed"
+      "stack": "mixed",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 2080
+        }
+      }
     },
     {
       "type": "mixed",
@@ -110,6 +117,7 @@
       "tcp_fast_open": false,
       "tcp_multi_path": false,
       "udp_fragment": false,
+      "sniff": true,
       "users": []
     }
   ],
@@ -380,7 +388,6 @@
     "final": "🐟 漏网之鱼",
     "rules": [
       {
-        "inbound": "tun-in",
         "action": "sniff"
       },
       {
