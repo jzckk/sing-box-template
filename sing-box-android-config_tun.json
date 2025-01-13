@@ -150,6 +150,15 @@
       "interrupt_exist_connections": false
     },
     {
+      "tag": "♻️ 自动选择",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 100,
+      "interrupt_exist_connections": false
+    },
+    {
       "tag": "📧 Google",
       "type": "selector",
       "outbounds": [
@@ -273,15 +282,6 @@
         "🇯🇵 日本自动"
       ],
       "default": "🇺🇸 美国自动",
-      "interrupt_exist_connections": false
-    },
-    {
-      "tag": "♻️ 自动选择",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
       "interrupt_exist_connections": false
     },
     {
