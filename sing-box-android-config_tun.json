@@ -31,18 +31,19 @@
       {
         "tag": "Local-DNS-alidns",
         "address": "https://223.5.5.5/dns-query",
+        "strategy": "prefer_ipv4",
         "address_resolver": "Local-DNS-Resolver",
+        "address_strategy": "prefer_ipv4",
         "detour": "🌐 全球直连"
       },
       {
         "tag": "Local-DNS-Resolver",
         "address": "223.5.5.5",
-        "strategy": "prefer_ipv4",
         "detour": "🌐 全球直连"
       },
       {
         "tag": "Remote-DNS-google",
-        "address": "8.8.8.8",
+        "address": "tls://8.8.8.8",
         "strategy": "prefer_ipv4",
         "detour": "🚀 节点选择"
       },
@@ -162,8 +163,8 @@
       "type": "urltest",
       "outbounds": [],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
+      "interval": "10m",
+      "tolerance": 50,
       "interrupt_exist_connections": false
     },
     {
@@ -184,7 +185,7 @@
         "🇯🇵 日本",
         "🇯🇵 日本自动"
       ],
-      "default": "♻️ 自动选择",
+      "default": "🚀 节点选择",
       "interrupt_exist_connections": false
     },
     {
@@ -205,7 +206,7 @@
         "🇯🇵 日本",
         "🇯🇵 日本自动"
       ],
-      "default": "♻️ 自动选择",
+      "default": "🚀 节点选择",
       "interrupt_exist_connections": false
     },
     {
@@ -247,7 +248,7 @@
         "🇯🇵 日本",
         "🇯🇵 日本自动"
       ],
-      "default": "♻️ 自动选择",
+      "default": "🚀 节点选择",
       "interrupt_exist_connections": false
     },
     {
@@ -268,7 +269,7 @@
         "🇯🇵 日本",
         "🇯🇵 日本自动"
       ],
-      "default": "♻️ 自动选择",
+      "default": "🚀 节点选择",
       "interrupt_exist_connections": false
     },
     {
@@ -303,8 +304,8 @@
       "type": "urltest",
       "outbounds": [],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
+      "interval": "10m",
+      "tolerance": 50,
       "interrupt_exist_connections": false
     },
     {
@@ -318,8 +319,8 @@
       "type": "urltest",
       "outbounds": [],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
+      "interval": "10m",
+      "tolerance": 50,
       "interrupt_exist_connections": false
     },
     {
@@ -333,8 +334,8 @@
       "type": "urltest",
       "outbounds": [],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
+      "interval": "10m",
+      "tolerance": 50,
       "interrupt_exist_connections": false
     },
     {
@@ -348,8 +349,8 @@
       "type": "urltest",
       "outbounds": [],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
+      "interval": "10m",
+      "tolerance": 50,
       "interrupt_exist_connections": false
     },
     {
@@ -363,8 +364,8 @@
       "type": "urltest",
       "outbounds": [],
       "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 100,
+      "interval": "10m",
+      "tolerance": 50,
       "interrupt_exist_connections": false
     },
     {
@@ -384,8 +385,8 @@
       "tag": "🐟 漏网之鱼",
       "type": "selector",
       "outbounds": [
-        "🌐 全球直连",
-        "🚀 节点选择"
+        "🚀 节点选择",
+        "🌐 全球直连"
       ],
       "interrupt_exist_connections": false
     }
