@@ -36,7 +36,7 @@
       },
       {
         "tag": "Remote-DNS-google",
-        "address": "1.1.1.1",
+        "address": "tls://8.8.8.8",
         "strategy": "ipv4_only",
         "detour": "🚀 节点选择"
       },
@@ -386,7 +386,6 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "override_android_vpn": true,
     "final": "🐟 漏网之鱼",
     "rules": [
       {
