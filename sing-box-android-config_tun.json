@@ -31,13 +31,13 @@
       {
         "tag": "Local-DNS-alidns",
         "address": "223.5.5.5",
-        "strategy": "ipv4_only",
+        "strategy": "prefer_ipv4",
         "detour": "🌐 全球直连"
       },
       {
         "tag": "Remote-DNS-google",
         "address": "tls://8.8.8.8",
-        "strategy": "ipv4_only",
+        "strategy": "prefer_ipv4",
         "detour": "🚀 节点选择"
       },
       {
@@ -73,7 +73,7 @@
       }
     ],
     "final": "Remote-DNS-google",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
@@ -119,7 +119,6 @@
       "tcp_fast_open": false,
       "tcp_multi_path": false,
       "udp_fragment": false,
-      "sniff": true,
       "users": []
     }
   ],
