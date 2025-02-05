@@ -30,19 +30,15 @@
     "servers": [
       {
         "tag": "Local-DNS-alidns",
-        "address": "223.5.5.5",
-        "strategy": "prefer_ipv4",
+        "type": "udp",
+        "server": "223.5.5.5",
         "detour": "🌐 全球直连"
       },
       {
         "tag": "Remote-DNS-google",
-        "address": "tls://8.8.8.8",
-        "strategy": "prefer_ipv4",
+        "type": "tls",
+        "server": "8.8.8.8",
         "detour": "🚀 节点选择"
-      },
-      {
-        "tag": "block",
-        "address": "rcode://success"
       }
     ],
     "rules": [
@@ -60,6 +56,11 @@
         "clash_mode": "全局",
         "action": "route",
         "server": "Remote-DNS-google"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "action": "reject",
+        "method": "drop"
       },
       {
         "rule_set": "geosite-cn",
@@ -405,12 +406,13 @@
         "outbound": "GLOBAL"
       },
       {
-        "action": "reject",
-        "protocol": "quic"
+        "protocol": "quic",
+        "action": "reject"
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "action": "reject"
+        "action": "reject",
+        "method": "drop"
       },
       {
         "rule_set": [
