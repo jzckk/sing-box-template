@@ -37,7 +37,7 @@
       {
         "tag": "Remote-DNS-google",
         "type": "tls",
-        "server": "8.8.8.8",
+        "server": "1.1.1.1",
         "detour": "🚀 节点选择"
       }
     ],
