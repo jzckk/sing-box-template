@@ -29,15 +29,21 @@
   "dns": {
     "servers": [
       {
-        "tag": "Local-DNS-alidns",
+        "tag": "Local-DNS-Alidns",
         "type": "udp",
         "server": "223.5.5.5",
         "detour": "🌐 全球直连"
       },
       {
-        "tag": "Remote-DNS-google",
+        "tag": "Remote-DNS-Google",
         "type": "tls",
         "server": "8.8.8.8",
+        "detour": "🚀 节点选择"
+      },
+      {
+        "tag": "Remote-DNS-CloudFlare",
+        "type": "https",
+        "server": "1.1.1.1",
         "detour": "🚀 节点选择"
       }
     ],
@@ -45,17 +51,17 @@
       {
         "outbound": "any",
         "action": "route",
-        "server": "Local-DNS-alidns"
+        "server": "Local-DNS-Alidns"
       },
       {
         "clash_mode": "直连",
         "action": "route",
-        "server": "Local-DNS-alidns"
+        "server": "Local-DNS-Alidns"
       },
       {
         "clash_mode": "全局",
         "action": "route",
-        "server": "Remote-DNS-google"
+        "server": "Remote-DNS-CloudFlare"
       },
       {
         "rule_set": "geosite-category-ads-all",
@@ -65,15 +71,15 @@
       {
         "rule_set": "geosite-cn",
         "action": "route",
-        "server": "Local-DNS-alidns"
+        "server": "Local-DNS-Alidns"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
         "action": "route",
-        "server": "Remote-DNS-google"
+        "server": "Remote-DNS-Google"
       }
     ],
-    "final": "Remote-DNS-google",
+    "final": "Remote-DNS-Google",
     "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
