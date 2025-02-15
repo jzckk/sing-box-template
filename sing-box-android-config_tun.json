@@ -30,7 +30,7 @@
     "servers": [
       {
         "tag": "Local-DNS-Alidns",
-        "type": "udp",
+        "type": "https",
         "server": "223.5.5.5",
         "detour": "🌐 全球直连"
       },
@@ -45,14 +45,15 @@
         "type": "https",
         "server": "1.1.1.1",
         "detour": "🚀 节点选择"
+      },
+      {
+        "tag": "fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
       }
     ],
     "rules": [
-      {
-        "outbound": "any",
-        "action": "route",
-        "server": "Local-DNS-Alidns"
-      },
       {
         "clash_mode": "直连",
         "action": "route",
@@ -83,12 +84,7 @@
     "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
-    "independent_cache": false,
-    "fakeip": {
-      "enabled": false,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    }
+    "independent_cache": false
   },
   "inbounds": [
     {
@@ -393,6 +389,7 @@
   "route": {
     "auto_detect_interface": true,
     "final": "🐟 漏网之鱼",
+    "default_domain_resolver": "Local-DNS-Alidns",
     "rules": [
       {
         "action": "sniff"
