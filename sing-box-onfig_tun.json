@@ -431,7 +431,7 @@
         "outbound": "📹 YouTube"
       },
       {
-        "rule_set": "geosite-chat",
+        "rule_set": "geosite-openai",
         "action": "route",
         "outbound": "🤖 OpenAI"
       },
