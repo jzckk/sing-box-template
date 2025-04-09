@@ -62,7 +62,7 @@
       {
         "clash_mode": "全局",
         "action": "route",
-        "server": "Remote-DNS-CloudFlare"
+        "server": "Remote-DNS-Google"
       },
       {
         "rule_set": "geosite-category-ads-all",
@@ -81,7 +81,7 @@
       }
     ],
     "final": "Remote-DNS-Google",
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false
@@ -459,13 +459,7 @@
       {
         "rule_set": [
           "geosite-private",
-          "geoip-private"
-        ],
-        "action": "route",
-        "outbound": "🌐 全球直连"
-      },
-      {
-        "rule_set": [
+          "geoip-private",
           "geosite-cn",
           "geoip-cn"
         ],
@@ -473,12 +467,10 @@
         "outbound": "🌐 全球直连"
       },
       {
-        "rule_set": "geosite-gfw",
-        "action": "route",
-        "outbound": "🚀 节点选择"
-      },
-      {
-        "rule_set": "geosite-geolocation-!cn",
+        "rule_set": [
+          "geosite-gfw",
+          "geosite-geolocation-!cn"
+        ],
         "action": "route",
         "outbound": "🚀 节点选择"
       }
