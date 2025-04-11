@@ -409,10 +409,6 @@
         "outbound": "GLOBAL"
       },
       {
-        "protocol": "quic",
-        "action": "reject"
-      },
-      {
         "rule_set": "geosite-category-ads-all",
         "action": "reject",
         "method": "drop"
@@ -508,7 +504,7 @@
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/openai.srs",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/openai.srs",
         "download_detour": "🚀 节点选择"
       },
       {
