@@ -32,7 +32,6 @@
         "tag": "Local-DNS-Alidns",
         "type": "https",
         "server": "223.5.5.5",
-        "detour": "🌐 全球直连"
       },
       {
         "tag": "Remote-DNS-Google",
