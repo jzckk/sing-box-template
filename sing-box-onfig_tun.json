@@ -156,7 +156,7 @@
       "tag": "♻️ 自动选择",
       "type": "urltest",
       "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://www.google.com/generate_204",
       "interval": "10m",
       "tolerance": 50,
       "interrupt_exist_connections": false
@@ -297,7 +297,7 @@
       "tag": "🇭🇰 香港自动",
       "type": "urltest",
       "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://www.google.com/generate_204",
       "interval": "10m",
       "tolerance": 50,
       "interrupt_exist_connections": false
@@ -312,7 +312,7 @@
       "tag": "🇺🇸 美国自动",
       "type": "urltest",
       "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://www.google.com/generate_204",
       "interval": "10m",
       "tolerance": 50,
       "interrupt_exist_connections": false
@@ -327,7 +327,7 @@
       "tag": "🇸🇬 新加坡自动",
       "type": "urltest",
       "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://www.google.com/generate_204",
       "interval": "10m",
       "tolerance": 50,
       "interrupt_exist_connections": false
@@ -342,7 +342,7 @@
       "tag": "🇰🇷 韩国自动",
       "type": "urltest",
       "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://www.google.com/generate_204",
       "interval": "10m",
       "tolerance": 50,
       "interrupt_exist_connections": false
@@ -357,7 +357,7 @@
       "tag": "🇯🇵 日本自动",
       "type": "urltest",
       "outbounds": [],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "https://www.google.com/generate_204",
       "interval": "10m",
       "tolerance": 50,
       "interrupt_exist_connections": false
