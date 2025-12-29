@@ -75,7 +75,7 @@
       }
     ],
     "final": "Remote-DNS-Google",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false
@@ -401,6 +401,11 @@
         "clash_mode": "全局",
         "action": "route",
         "outbound": "GLOBAL"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "action": "reject",
+        "method": "default"
       },
       {
         "rule_set": [
