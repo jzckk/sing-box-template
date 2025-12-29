@@ -405,7 +405,7 @@
       {
         "rule_set": "geosite-category-ads-all",
         "action": "reject",
-        "method": "drop"
+        "method": "default"
       },
       {
         "rule_set": [
