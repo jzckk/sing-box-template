@@ -403,11 +403,6 @@
         "outbound": "GLOBAL"
       },
       {
-        "rule_set": "geosite-category-ads-all",
-        "action": "reject",
-        "method": "default"
-      },
-      {
         "rule_set": [
           "geosite-google",
           "geoip-google"
