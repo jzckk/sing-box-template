@@ -75,7 +75,7 @@
       }
     ],
     "final": "Remote-DNS-Google",
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false
