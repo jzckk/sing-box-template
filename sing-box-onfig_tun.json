@@ -64,11 +64,6 @@
         "server": "Remote-DNS-Google"
       },
       {
-        "rule_set": "geosite-category-ads-all",
-        "action": "reject",
-        "method": "drop"
-      },
-      {
         "rule_set": "geosite-cn",
         "action": "route",
         "server": "Local-DNS-Alidns"
