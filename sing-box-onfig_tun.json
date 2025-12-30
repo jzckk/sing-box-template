@@ -31,18 +31,21 @@
       {
         "tag": "Local-DNS-Alidns",
         "type": "https",
-        "server": "223.5.5.5"
+        "server": "223.5.5.5",
+        "server_port": 443
       },
       {
         "tag": "Remote-DNS-Google",
         "type": "tls",
         "server": "8.8.8.8",
+        "server_port": 853,
         "detour": "🚀 节点选择"
       },
       {
         "tag": "Remote-DNS-CloudFlare",
         "type": "https",
         "server": "1.1.1.1",
+        "server_port": 443,
         "detour": "🚀 节点选择"
       },
       {
@@ -75,7 +78,7 @@
       }
     ],
     "final": "Remote-DNS-Google",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false
@@ -89,7 +92,7 @@
         "172.18.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
-      "mtu": 1280,
+      "mtu": 1500,
       "auto_route": true,
       "strict_route": true,
       "route_address": [
@@ -403,11 +406,6 @@
         "outbound": "GLOBAL"
       },
       {
-        "action": "reject",
-        "protocol": "quic",
-        "method": "default"
-      },
-      {
         "rule_set": "geosite-category-ads-all",
         "action": "reject",
         "method": "default"
@@ -450,6 +448,11 @@
         "rule_set": "geosite-tiktok",
         "action": "route",
         "outbound": "🎵 TikTok"
+      },
+      {
+        "ip_is_private": true,
+        "action": "route",
+        "outbound": "🌐 全球直连"
       },
       {
         "rule_set": [
