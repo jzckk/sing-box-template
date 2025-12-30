@@ -403,6 +403,11 @@
         "outbound": "GLOBAL"
       },
       {
+        "action": "reject",
+        "protocol": "quic",
+        "method": "default"
+      },
+      {
         "rule_set": "geosite-category-ads-all",
         "action": "reject",
         "method": "default"
